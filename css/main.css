@@ -1,0 +1,21 @@
+html, body{
+  background-color: #eaeaea;
+  min-width: 600px;
+  min-height:600px;
+}
+
+.list{
+  margin:auto;
+}
+
+h4 {
+  text-align: center;
+  padding-left: 15px;
+}
+
+.buttonDiv{
+  visibility: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}

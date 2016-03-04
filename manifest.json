@@ -1,0 +1,22 @@
+{
+  "name": "Image Linkifier",
+  "description": "A Chrome app that displays links to all images on a page.",
+  "version": "1.0",
+  "permissions": [],
+  "manifest_version": 2,
+  "background":{
+    "scripts": ["js/vendor/angular.js", "js/vendor/angularroute.js", "js/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["js/getImages.js"]
+    }
+  ],
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "listpopup.html"
+  },
+  "permissions": ["tabs", "<all_urls>", "activeTab"]
+}
