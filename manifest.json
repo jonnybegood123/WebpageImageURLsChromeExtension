@@ -5,7 +5,7 @@
   "permissions": [],
   "manifest_version": 2,
   "background":{
-    "scripts": ["js/vendor/angular.js", "js/vendor/angularroute.js", "js/background.js"]
+    "scripts": ["js/vendor/angular.js", "js/vendor/jquery.js", "js/background.js"]
   },
   "content_scripts": [
     {
