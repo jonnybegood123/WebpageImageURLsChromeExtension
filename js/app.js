@@ -41,11 +41,8 @@ angular.module("myApp", [])
         var link = document.createElement('a');
         link.href = a[i].link;
         link.download = function(i){return i + '.' + a[i].link.split('.').pop();}(i);
-        document.body.appendChild(link);
         link.click();
-        document.body.removeChild(link);
       }
-      window.addEventListener('unload', function() { debugger; });
     }
     document.getElementById("downloadButton").addEventListener("click", downloadImages);
   });

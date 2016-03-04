@@ -4,18 +4,27 @@ html, body{
   min-height:600px;
 }
 
-.list{
-  margin:auto;
+ul{
+  list-style-position:inside;
+  list-style:none;
+  padding-left:0;
+}
+
+.listcontent{
+  margin-left:15px;
+}
+
+hr {
+  border: 1px solid grey;
 }
 
 h4 {
   text-align: center;
-  padding-left: 15px;
 }
 
 .buttonDiv{
   visibility: hidden;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   text-align: center;
 }

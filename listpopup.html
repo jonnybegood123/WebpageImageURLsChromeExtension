@@ -11,13 +11,20 @@
   </head>
   <body ng-controller="myController">
     <h4 id="header"> Webpage is still loading... </h4>
-    <div class="list">
-      <ul ng-repeat="image in links.array">
-        <li><a href={{image.link}}>{{image.link}}</a></li>
-      </ul>
-    </div>
     <div class="buttonDiv">
       <button id="downloadButton" type="button">Download All Images</button>
+    </div>
+    <div>
+      <ul class="list" ng-repeat="image in links.array">
+        <li>
+          <hr>
+          <div class="listcontent" ng-controller="myController">
+            <img src={{image.link}} height="45" width="45"><br>
+            <a href={{image.link}}>{{image.link}}</a></br>
+            <a href={{image.link}} download={{$index}} >Download</a>
+          </div>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
