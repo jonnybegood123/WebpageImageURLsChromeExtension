@@ -18,6 +18,7 @@ angular.module("myApp", [])
             setImagesURLs);
       });
     });
+
     // Update links
     function setImagesURLs(info) {
       $scope.$apply(function(){
@@ -26,13 +27,6 @@ angular.module("myApp", [])
       document.getElementById("header").innerHTML = "URLs of the images on this webpage:";
       document.getElementsByClassName("buttonDiv")[0].style.visibility="visible";
     }
-
-    //opens images in new tab if clicked
-    window.addEventListener('click',function(e){
-      if(e.target.href!==undefined){
-        chrome.tabs.create({url:e.target.href})
-      }
-    })
 
     //download all the images listed upon button click
     function downloadImages(){

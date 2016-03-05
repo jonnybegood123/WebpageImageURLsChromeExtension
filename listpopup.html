@@ -19,9 +19,9 @@
         <li>
           <hr>
           <div class="listcontent" ng-controller="myController">
-            <img src={{image.link}} height="45" width="45"><br>
-            <a href={{image.link}}>{{image.link}}</a></br>
-            <a href={{image.link}} download={{$index}} >Download</a>
+            <img src={{image.link}} height="50" width="50"><br>
+            <a id="imageLink" href={{image.link}} target='_newtab'>{{image.link}}</a></br>
+            <a href={{image.link}} download={{$index}}>Download</a>
           </div>
         </li>
       </ul>
