@@ -7,6 +7,10 @@
   "background":{
     "scripts": ["js/vendor/angular.js", "js/vendor/jquery.js", "js/background.js"]
   },
+  "icons": { "16": "icon.png",
+           "48": "icon.png",
+          "128": "icon.png" 
+  },
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
